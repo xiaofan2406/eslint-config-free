@@ -2,8 +2,6 @@
 
 // Inspired by https://www.npmjs.com/package/eslint-config-react-app
 
-// TODO update warn level to error level
-
 // The ESLint browser environment defines all browser globals as valid,
 // even though most people don't know some of them exist (e.g. `name` or `status`).
 // This is dangerous as it hides accidentally undefined variables.
