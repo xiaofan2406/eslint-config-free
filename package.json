@@ -14,5 +14,8 @@
   },
   "engines": {
     "node": ">=8"
+  },
+  "dependencies": {
+    "confusing-browser-globals": "^1.0.9"
   }
 }
