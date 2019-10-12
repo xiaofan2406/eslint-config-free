@@ -1,0 +1,18 @@
+{
+  "name": "eslint-config-free",
+  "version": "0.0.0",
+  "description": "ESLint configuration",
+  "main": "index.js",
+  "repository": "https://github.com/xiaofan2406/eslint-config-free",
+  "author": "Xiaofan Wu",
+  "license": "MIT",
+  "keywords": [
+    "eslint"
+  ],
+  "bugs": {
+    "url": "https://github.com/xiaofan2406/eslint-config-free/issues"
+  },
+  "engines": {
+    "node": ">=8"
+  }
+}
