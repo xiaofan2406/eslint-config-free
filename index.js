@@ -92,15 +92,15 @@ module.exports = {
     },
   ],
 
+  extends: ['prettier', 'prettier/@typescript-eslint', 'prettier/react'],
+
   // NOTE: When adding rules here, you need to make sure they are compatible with
   // `typescript-eslint`, as some rules such as `no-array-constructor` aren't compatible.
   rules: {
     // http://eslint.org/docs/rules/
     'array-callback-return': 'warn',
     'default-case': ['warn', { commentPattern: '^no default$' }],
-    'dot-location': ['warn', 'property'],
-    eqeqeq: ['warn', 'smart'],
-    'new-parens': 'warn',
+    eqeqeq: ['error', 'smart'],
     'no-array-constructor': 'warn',
     'no-caller': 'warn',
     'no-cond-assign': ['warn', 'except-parens'],
@@ -127,18 +127,6 @@ module.exports = {
     'no-labels': ['warn', { allowLoop: true, allowSwitch: false }],
     'no-lone-blocks': 'warn',
     'no-loop-func': 'warn',
-    'no-mixed-operators': [
-      'warn',
-      {
-        groups: [
-          ['&', '|', '^', '~', '<<', '>>', '>>>'],
-          ['==', '!=', '===', '!==', '>', '>=', '<', '<='],
-          ['&&', '||'],
-          ['in', 'instanceof'],
-        ],
-        allowSamePrecedence: false,
-      },
-    ],
     'no-multi-str': 'warn',
     'no-native-reassign': 'warn',
     'no-negated-in-lhs': 'warn',
@@ -163,7 +151,6 @@ module.exports = {
     'no-throw-literal': 'warn',
     'no-undef': 'error',
     'no-restricted-globals': ['error'].concat(restrictedGlobals),
-    'no-unexpected-multiline': 'warn',
     'no-unreachable': 'warn',
     'no-unused-expressions': [
       'error',
@@ -173,16 +160,16 @@ module.exports = {
         allowTaggedTemplates: true,
       },
     ],
-    'no-unused-labels': 'warn',
+    'no-unused-labels': 'error',
     'no-unused-vars': [
-      'warn',
+      'error',
       {
         args: 'none',
         ignoreRestSiblings: true,
       },
     ],
     'no-use-before-define': [
-      'warn',
+      'error',
       {
         functions: false,
         classes: false,
@@ -202,12 +189,9 @@ module.exports = {
       },
     ],
     'no-with': 'warn',
-    'no-whitespace-before-property': 'warn',
     'react-hooks/exhaustive-deps': 'warn',
     'require-yield': 'warn',
-    'rest-spread-spacing': ['warn', 'never'],
     strict: ['warn', 'never'],
-    'unicode-bom': ['warn', 'never'],
     'use-isnan': 'warn',
     'valid-typeof': 'warn',
     'no-restricted-properties': [
