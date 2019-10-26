@@ -2,21 +2,28 @@
 
 ## Get Started
 
-### Install peer dependencies
+### Install
 
 ```
-yarn add -D @typescript-eslint/eslint-plugin@2.x @typescript-eslint/parser@2.x babel-eslint@10.x eslint@6.x eslint-config-prettier@6.x eslint-plugin-import@2.x eslint-plugin-jsx-a11y@6.x eslint-plugin-react@7.x eslint-plugin-react-hooks@2.x
+yarn add -D eslint-config-free babel-eslint@10.x eslint@6.x
 ```
+
+`babel-eslint` and `eslint` are required peer dependencies.
 
 ### Extend the config
 
-Ensure the `free` config is in the `extends`
+Ensure the `free` config is in the `extends` in your `.eslintrc` file.
 
 ```json
 {
   "extends": "free"
 }
 ```
+
+## Includes
+
+- typescript linting
+- prettier support
 
 ## TODO
 
