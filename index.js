@@ -233,10 +233,7 @@ module.exports = {
     'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
     'react/no-danger-with-children': 'error',
-    // Disabled because of undesirable warnings
-    // See https://github.com/facebook/create-react-app/issues/5204 for
-    // blockers until its re-enabled
-    // 'react/no-deprecated': 'error',
+    'react/no-deprecated': 'error',
     'react/no-direct-mutation-state': 'error',
     'react/no-is-mounted': 'error',
     'react/no-typos': 'error',
