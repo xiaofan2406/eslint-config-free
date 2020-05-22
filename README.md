@@ -24,7 +24,3 @@ Ensure the `free` config is in the `extends` in your `.eslintrc` file.
 
 - typescript linting
 - prettier support
-
-## TODO
-
-- update reporting level making it more strict
