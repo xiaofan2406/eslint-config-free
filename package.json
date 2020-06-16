@@ -19,14 +19,14 @@
     "postpublish": "git push && git push --tags"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^3.0.0",
-    "@typescript-eslint/parser": "^3.0.0",
+    "@typescript-eslint/eslint-plugin": "^3.3.0",
+    "@typescript-eslint/parser": "^3.3.0",
     "confusing-browser-globals": "^1.0.9",
     "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-import": "^2.21.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.20.0",
-    "eslint-plugin-react-hooks": "^4.0.2"
+    "eslint-plugin-react-hooks": "^4.0.4"
   },
   "peerDependencies": {
     "babel-eslint": "10.x",
