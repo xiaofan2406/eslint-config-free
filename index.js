@@ -66,6 +66,7 @@ module.exports = {
         '@typescript-eslint/consistent-type-assertions': 'error',
         'no-array-constructor': 'off',
         '@typescript-eslint/no-array-constructor': 'error',
+        'no-redeclare': 'off',
         '@typescript-eslint/no-namespace': 'error',
         'no-use-before-define': 'off',
         '@typescript-eslint/no-use-before-define': [
@@ -75,6 +76,15 @@ module.exports = {
             classes: false,
             variables: false,
             typedefs: false,
+          },
+        ],
+        'no-unused-expressions': 'off',
+        '@typescript-eslint/no-unused-expressions': [
+          'error',
+          {
+            allowShortCircuit: true,
+            allowTernary: true,
+            allowTaggedTemplates: true,
           },
         ],
         'no-unused-vars': 'off',
@@ -99,7 +109,9 @@ module.exports = {
     // http://eslint.org/docs/rules/
     'array-callback-return': 'error',
     'default-case': ['error', { commentPattern: '^no default$' }],
+    'dot-location': ['error', 'property'],
     eqeqeq: ['error', 'smart'],
+    'new-parens': 'error',
     'no-array-constructor': 'error',
     'no-caller': 'error',
     'no-cond-assign': ['error', 'except-parens'],
@@ -126,6 +138,18 @@ module.exports = {
     'no-labels': ['error', { allowLoop: true, allowSwitch: false }],
     'no-lone-blocks': 'error',
     'no-loop-func': 'error',
+    'no-mixed-operators': [
+      'error',
+      {
+        groups: [
+          ['&', '|', '^', '~', '<<', '>>', '>>>'],
+          ['==', '!=', '===', '!==', '>', '>=', '<', '<='],
+          ['&&', '||'],
+          ['in', 'instanceof'],
+        ],
+        allowSamePrecedence: false,
+      },
+    ],
     'no-multi-str': 'error',
     'no-native-reassign': 'error',
     'no-negated-in-lhs': 'error',
@@ -136,7 +160,7 @@ module.exports = {
     'no-obj-calls': 'error',
     'no-octal': 'error',
     'no-octal-escape': 'error',
-    'no-redeclare': ['error', { builtinGlobals: false }],
+    'no-redeclare': 'error',
     'no-regex-spaces': 'error',
     'no-restricted-syntax': ['error', 'WithStatement'],
     'no-script-url': 'error',
@@ -188,9 +212,11 @@ module.exports = {
       },
     ],
     'no-with': 'error',
-    'react-hooks/exhaustive-deps': 'error',
+    'no-whitespace-before-property': 'error',
     'require-yield': 'error',
+    'rest-spread-spacing': ['error', 'never'],
     strict: ['error', 'never'],
+    'unicode-bom': ['error', 'never'],
     'use-isnan': 'error',
     'valid-typeof': 'error',
     'no-restricted-properties': [
@@ -213,6 +239,7 @@ module.exports = {
     // https://github.com/benmosher/eslint-plugin-import/tree/master/docs/rules
     'import/first': 'error',
     'import/no-amd': 'error',
+    'import/no-anonymous-default-export': 'error',
     'import/no-webpack-loader-syntax': 'error',
     'import/no-unresolved': 'error',
 
@@ -236,12 +263,10 @@ module.exports = {
     'react/no-direct-mutation-state': 'error',
     'react/no-is-mounted': 'error',
     'react/no-typos': 'error',
-    'react/react-in-jsx-scope': 'error',
     'react/require-render-return': 'error',
     'react/style-prop-object': 'error',
 
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/tree/master/docs/rules
-    'jsx-a11y/accessible-emoji': 'error',
     'jsx-a11y/alt-text': 'error',
     'jsx-a11y/anchor-has-content': 'error',
     'jsx-a11y/anchor-is-valid': [
@@ -267,5 +292,6 @@ module.exports = {
 
     // https://github.com/facebook/react/tree/master/packages/eslint-plugin-react-hooks
     'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'error',
   },
 };
