@@ -5,10 +5,10 @@
 ### Install
 
 ```
-yarn add -D eslint-config-free babel-eslint@^10 eslint@^7
+yarn add -D eslint-config-free
 ```
 
-`babel-eslint` and `eslint` are required peer dependencies.
+`babel-eslint` (v10) and `eslint` (v7) are required peer dependencies.
 
 ### Extend the config
 

@@ -67,7 +67,7 @@ module.exports = {
         'no-array-constructor': 'off',
         '@typescript-eslint/no-array-constructor': 'error',
         'no-redeclare': 'off',
-        '@typescript-eslint/no-namespace': 'error',
+        '@typescript-eslint/no-redeclare': 'error',
         'no-use-before-define': 'off',
         '@typescript-eslint/no-use-before-define': [
           'error',
@@ -101,14 +101,14 @@ module.exports = {
     },
   ],
 
-  extends: ['prettier', 'prettier/@typescript-eslint', 'prettier/react'],
+  extends: ['prettier'],
 
   // NOTE: When adding rules here, you need to make sure they are compatible with
   // `typescript-eslint`, as some rules such as `no-array-constructor` aren't compatible.
   rules: {
     // http://eslint.org/docs/rules/
     'array-callback-return': 'error',
-    'default-case': ['error', { commentPattern: '^no default$' }],
+    'default-case': ['error', {commentPattern: '^no default$'}],
     'dot-location': ['error', 'property'],
     eqeqeq: ['error', 'smart'],
     'new-parens': 'error',
@@ -135,7 +135,7 @@ module.exports = {
     'no-invalid-regexp': 'error',
     'no-iterator': 'error',
     'no-label-var': 'error',
-    'no-labels': ['error', { allowLoop: true, allowSwitch: false }],
+    'no-labels': ['error', {allowLoop: true, allowSwitch: false}],
     'no-lone-blocks': 'error',
     'no-loop-func': 'error',
     'no-mixed-operators': [
@@ -244,7 +244,7 @@ module.exports = {
     'import/no-unresolved': 'error',
 
     // https://github.com/yannickcr/eslint-plugin-react/tree/master/docs/rules
-    'react/forbid-foreign-prop-types': ['error', { allowInPropTypes: true }],
+    'react/forbid-foreign-prop-types': ['error', {allowInPropTypes: true}],
     'react/jsx-no-comment-textnodes': 'error',
     'react/jsx-no-duplicate-props': 'error',
     'react/jsx-no-target-blank': 'error',
@@ -278,7 +278,7 @@ module.exports = {
     'jsx-a11y/aria-activedescendant-has-tabindex': 'error',
     'jsx-a11y/aria-props': 'error',
     'jsx-a11y/aria-proptypes': 'error',
-    'jsx-a11y/aria-role': ['error', { ignoreNonDOM: true }],
+    'jsx-a11y/aria-role': ['error', {ignoreNonDOM: true}],
     'jsx-a11y/aria-unsupported-elements': 'error',
     'jsx-a11y/heading-has-content': 'error',
     'jsx-a11y/iframe-has-title': 'error',
