@@ -10,23 +10,19 @@
 const restrictedGlobals = require('confusing-browser-globals');
 
 module.exports = {
-  root: true,
+  env: {
+    browser: true,
+    node: true,
+    commonjs: true,
+    es2021: true,
+  },
 
   parser: 'babel-eslint',
 
-  plugins: ['import', 'jsx-a11y', 'react', 'react-hooks'],
-
-  env: {
-    browser: true,
-    commonjs: true,
-    es6: true,
-    node: true,
-  },
-
   parserOptions: {
-    ecmaVersion: 2018,
     sourceType: 'module',
     ecmaFeatures: {
+      impliedStrict: true,
       jsx: true,
     },
   },
@@ -36,6 +32,10 @@ module.exports = {
       version: 'detect',
     },
   },
+
+  plugins: ['import', 'jsx-a11y', 'react', 'react-hooks'],
+
+  extends: ['prettier'],
 
   overrides: [
     {
@@ -100,8 +100,6 @@ module.exports = {
       },
     },
   ],
-
-  extends: ['prettier'],
 
   // NOTE: When adding rules here, you need to make sure they are compatible with
   // `typescript-eslint`, as some rules such as `no-array-constructor` aren't compatible.

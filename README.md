@@ -8,7 +8,7 @@
 yarn add -D eslint-config-free
 ```
 
-`babel-eslint` (v10) and `eslint` (v7) are required peer dependencies.
+`@babel/eslint-parser` and `eslint` are required peer dependencies.
 
 ### Extend the config
 
@@ -23,4 +23,8 @@ Ensure the `free` config is in the `extends` in your `.eslintrc` file.
 ## Includes
 
 - typescript linting
-- prettier support
+- eslint-config-prettier
+- eslint-plugin-import
+- eslint-plugin-jsx-a11y
+- eslint-plugin-react
+- eslint-plugin-react-hooks
