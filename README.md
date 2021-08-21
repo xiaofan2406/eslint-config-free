@@ -8,11 +8,9 @@
 npm i -D eslint-config-free
 ```
 
-`@babel/eslint-parser` and `eslint` are required peer dependencies.
-
 ### Extend the config
 
-Ensure the `free` config is in the `extends` in your `.eslintrc` file.
+Ensure the `free` config is in the `extends` in your eslint config file.
 
 ```json
 {
