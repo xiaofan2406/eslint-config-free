@@ -29,6 +29,11 @@ module.exports = {
     react: {
       version: 'detect',
     },
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+    },
   },
 
   plugins: ['import', 'jsx-a11y', 'react', 'react-hooks'],
