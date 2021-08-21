@@ -5,7 +5,7 @@
 ### Install
 
 ```
-yarn add -D eslint-config-free
+npm i -D eslint-config-free
 ```
 
 `@babel/eslint-parser` and `eslint` are required peer dependencies.
