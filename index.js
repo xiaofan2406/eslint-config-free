@@ -55,6 +55,9 @@ module.exports = {
         warnOnUnsupportedTypeScriptVersion: true,
       },
       plugins: ['@typescript-eslint'],
+
+      extends: ['plugin:import/typescript'],
+
       // If adding a typescript-eslint version of an existing ESLint rule,
       // make sure to disable the ESLint rule here.
       rules: {
@@ -236,13 +239,25 @@ module.exports = {
       },
     ],
     'getter-return': 'error',
+    'no-duplicate-imports': 'error',
 
     // https://github.com/benmosher/eslint-plugin-import/tree/master/docs/rules
-    'import/first': 'error',
-    'import/no-amd': 'error',
-    'import/no-anonymous-default-export': 'error',
-    'import/no-webpack-loader-syntax': 'error',
     'import/no-unresolved': 'error',
+    'import/named': 'error',
+    'import/default': 'error',
+    'import/namespace': 'error',
+    'import/no-webpack-loader-syntax': 'error',
+    'import/no-self-import': 'error',
+    'import/no-useless-path-segments': 'error',
+    'import/export': 'error',
+    'import/no-amd': 'error',
+    'import/first': 'error',
+    'import/no-anonymous-default-export': 'error',
+
+    'import/no-named-as-default': 'warn',
+    'import/no-named-as-default-member': 'warn',
+    'import/no-unused-modules': 'warn',
+    'import/no-import-module-exports': 'warn',
 
     // https://github.com/yannickcr/eslint-plugin-react/tree/master/docs/rules
     'react/forbid-foreign-prop-types': ['error', {allowInPropTypes: true}],
