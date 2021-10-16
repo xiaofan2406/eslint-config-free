@@ -246,18 +246,22 @@ module.exports = {
     'import/named': 'error',
     'import/default': 'error',
     'import/namespace': 'error',
+    'import/no-absolute-path': 'error',
     'import/no-webpack-loader-syntax': 'error',
     'import/no-self-import': 'error',
     'import/no-useless-path-segments': 'error',
-    'import/export': 'error',
     'import/no-amd': 'error',
-    'import/first': 'error',
-    'import/no-anonymous-default-export': 'error',
 
+    'import/export': 'warn',
     'import/no-named-as-default': 'warn',
     'import/no-named-as-default-member': 'warn',
+    'import/no-deprecated': 'warn',
     'import/no-unused-modules': 'warn',
     'import/no-import-module-exports': 'warn',
+
+    'import/first': 'error',
+    'import/no-duplicates': 'error',
+    'import/no-anonymous-default-export': 'error',
 
     // https://github.com/yannickcr/eslint-plugin-react/tree/master/docs/rules
     'react/forbid-foreign-prop-types': ['error', {allowInPropTypes: true}],
