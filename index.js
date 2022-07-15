@@ -31,7 +31,7 @@ module.exports = {
     },
     'import/resolver': {
       node: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+        extensions: ['.js', '.jsx', '.cjs', '.mjs', '.ts', '.tsx'],
       },
     },
   },
@@ -241,8 +241,7 @@ module.exports = {
     'getter-return': 'error',
     'no-duplicate-imports': 'error',
 
-    // https://github.com/benmosher/eslint-plugin-import/tree/master/docs/rules
-    'import/no-unresolved': 'error',
+    // https://github.com/import-js/eslint-plugin-import
     'import/named': 'error',
     'import/default': 'error',
     'import/namespace': 'error',
@@ -263,30 +262,7 @@ module.exports = {
     'import/no-duplicates': 'error',
     'import/no-anonymous-default-export': 'error',
 
-    // https://github.com/yannickcr/eslint-plugin-react/tree/master/docs/rules
-    'react/forbid-foreign-prop-types': ['error', {allowInPropTypes: true}],
-    'react/jsx-no-comment-textnodes': 'error',
-    'react/jsx-no-duplicate-props': 'error',
-    'react/jsx-no-target-blank': 'error',
-    'react/jsx-no-undef': 'error',
-    'react/jsx-pascal-case': [
-      'error',
-      {
-        allowAllCaps: true,
-        ignore: [],
-      },
-    ],
-    'react/jsx-uses-react': 'error',
-    'react/jsx-uses-vars': 'error',
-    'react/no-danger-with-children': 'error',
-    'react/no-deprecated': 'error',
-    'react/no-direct-mutation-state': 'error',
-    'react/no-is-mounted': 'error',
-    'react/no-typos': 'error',
-    'react/require-render-return': 'error',
-    'react/style-prop-object': 'error',
-
-    // https://github.com/evcohen/eslint-plugin-jsx-a11y/tree/master/docs/rules
+    // https://github.com/evcohen/eslint-plugin-jsx-a11y
     'jsx-a11y/alt-text': 'error',
     'jsx-a11y/anchor-has-content': 'error',
     'jsx-a11y/anchor-is-valid': [
@@ -309,6 +285,29 @@ module.exports = {
     'jsx-a11y/role-has-required-aria-props': 'error',
     'jsx-a11y/role-supports-aria-props': 'error',
     'jsx-a11y/scope': 'error',
+
+    // https://github.com/yannickcr/eslint-plugin-react
+    'react/forbid-foreign-prop-types': ['error', {allowInPropTypes: true}],
+    'react/jsx-no-comment-textnodes': 'error',
+    'react/jsx-no-duplicate-props': 'error',
+    'react/jsx-no-target-blank': 'error',
+    'react/jsx-no-undef': 'error',
+    'react/jsx-pascal-case': [
+      'error',
+      {
+        allowAllCaps: true,
+        ignore: [],
+      },
+    ],
+    'react/jsx-uses-react': 'error',
+    'react/jsx-uses-vars': 'error',
+    'react/no-danger-with-children': 'error',
+    'react/no-deprecated': 'error',
+    'react/no-direct-mutation-state': 'error',
+    'react/no-is-mounted': 'error',
+    'react/no-typos': 'error',
+    'react/require-render-return': 'error',
+    'react/style-prop-object': 'error',
 
     // https://github.com/facebook/react/tree/master/packages/eslint-plugin-react-hooks
     'react-hooks/rules-of-hooks': 'error',
