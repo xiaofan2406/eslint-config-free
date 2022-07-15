@@ -244,7 +244,7 @@ module.exports = {
     // https://github.com/import-js/eslint-plugin-import
     'import/named': 'error',
     'import/default': 'error',
-    'import/namespace': 'error',
+    'import/namespace': ['error', {allowComputed: true}],
     'import/no-absolute-path': 'error',
     'import/no-webpack-loader-syntax': 'error',
     'import/no-self-import': 'error',
