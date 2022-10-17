@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-free",
-  "version": "1.5.3",
+  "version": "1.5.4",
   "description": "ESLint configuration",
   "main": "index.js",
   "repository": "https://github.com/xiaofan2406/eslint-config-free",
