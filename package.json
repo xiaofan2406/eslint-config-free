@@ -16,8 +16,8 @@
     "postpublish": "git push && git push --tags"
   },
   "engines": {
-    "node": "^16",
-    "npm": "^8"
+    "node": "^18",
+    "npm": "^9"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.40.1",
