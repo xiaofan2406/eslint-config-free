@@ -12,9 +12,6 @@
   "bugs": {
     "url": "https://github.com/xiaofan2406/eslint-config-free/issues"
   },
-  "scripts": {
-    "postpublish": "git push && git push --tags"
-  },
   "engines": {
     "node": "^18",
     "npm": "^9"
