@@ -13,7 +13,7 @@
     "url": "https://github.com/xiaofan2406/eslint-config-free/issues"
   },
   "engines": {
-    "node": "^18",
+    "node": "^v18.15.0",
     "npm": "^9.6.3"
   },
   "dependencies": {
