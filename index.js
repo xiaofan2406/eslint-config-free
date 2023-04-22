@@ -260,7 +260,6 @@ module.exports = {
 
     'import/first': 'error',
     'import/no-duplicates': 'error',
-    'import/no-anonymous-default-export': 'error',
 
     // https://github.com/evcohen/eslint-plugin-jsx-a11y
     'jsx-a11y/alt-text': 'error',
